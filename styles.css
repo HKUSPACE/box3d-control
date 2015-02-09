@@ -4,6 +4,15 @@ html, body{
     font-family: sans-serif;
 }
 
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+
 .wrap {
 	perspective: 800px;
 	perspective-origin: 50% 100px;
@@ -67,6 +76,8 @@ html, body{
 	to { transform: rotateY(360deg); }
 }
 
+/*
 .cube {
 	-webkit-animation: spin 5s infinite linear;
 }
+*/
